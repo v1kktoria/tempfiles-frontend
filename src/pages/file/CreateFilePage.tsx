@@ -207,7 +207,6 @@ export default function CreateFilePage() {
                   {groups.map((g) => (
                     <MenuItem key={g.id} value={g.id}>
                       {g.name}
-                      {g.description && ` - ${g.description}`}
                     </MenuItem>
                   ))}
                 </Select>
