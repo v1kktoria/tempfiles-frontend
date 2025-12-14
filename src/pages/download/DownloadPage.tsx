@@ -158,14 +158,14 @@ export const DownloadPage: React.FC = () => {
               <Stack spacing={2}>
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                   <Typography color="text.secondary">Создана:</Typography>
-                  <Typography fontWeight="500">{new Date(link.createdAt).toLocaleString()}</Typography>
+                  <Typography fontWeight="500">{new Date(link.createdAt).toLocaleDateString()}</Typography>
                 </Box>
 
                 {link.expiresAt && (
                   <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                     <Typography color={isExpired ? "error" : "text.secondary"}>Истекает:</Typography>
                     <Typography fontWeight="500" color={isExpired ? "error" : "text.primary"}>
-                      {new Date(link.expiresAt).toLocaleString()}
+                      {new Date(link.expiresAt).toLocaleDateString()}
                     </Typography>
                   </Box>
                 )}
