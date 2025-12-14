@@ -13,7 +13,7 @@ export const DownloadPage: React.FC = () => {
   const { token } = useParams<{ token: string }>();
   const dispatch = useAppDispatch();
 
-  const isAdmin = useAuth();
+  const { isAdmin } = useAuth();
 
   const [link, setLink] = useState<LinkDto | null>(null);
   const [downloadUrl, setDownloadUrl] = useState("");
