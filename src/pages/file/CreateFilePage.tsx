@@ -55,7 +55,7 @@ export default function CreateFilePage() {
       const days = parseInt(value);
       const date = new Date();
       date.setDate(date.getDate() + days);
-      date.setHours(0, 0, 0, 0);
+      date.setHours(23, 59, 0, 0);
       setExpiresAt(date.toISOString());
     }
   };
